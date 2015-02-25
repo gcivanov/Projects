@@ -1,0 +1,22 @@
+    <h2 class="sub-header">List of all users</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Time</th>
+            <th>Projection</th>
+            <th>Rooms</th>
+            <th>Reservation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="projection in projections">
+            <td>{{projection.timesOfProj}}</td>
+            <td>{{projection.movie}}</td>
+            <td>{{projection.rooms}}</td>
+            <td>{{projection.reservation}}</td>
+            
+        </tr>
+        </tbody>
+    </table>   
+    
+  <div><a href="#home">Home  </a></div>

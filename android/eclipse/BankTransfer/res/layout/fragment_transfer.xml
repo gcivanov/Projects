@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/transfer_from" />
+
+    <Spinner
+        android:id="@+id/fromIbanSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fromIbanSpinner"
+        android:layout_marginTop="21dp"
+        android:text="@string/transfer_to" />
+    
+    <Spinner
+        android:id="@+id/toIbanSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2" >
+    </Spinner>
+    
+    <EditText
+        android:id="@+id/moneyEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toIbanSpinner"
+        android:ems="4"
+        android:hint=" $$$"
+        android:inputType="numberDecimal" />
+    
+    <TextView 
+        android:id = "@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/moneyEditText"
+        android:layout_alignBaseline= "@id/moneyEditText"
+        android:text="@string/currency"
+        />
+
+    <EditText
+        android:id="@+id/textEditText"
+        android:hint="@string/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/moneyEditText"
+        android:layout_marginTop="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textEditText"
+        android:text="@string/ok" />
+    
+</RelativeLayout>

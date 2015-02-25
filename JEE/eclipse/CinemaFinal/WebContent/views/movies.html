@@ -1,0 +1,20 @@
+    <h2 class="sub-header">List of all users</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Projections</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="movie in movies">
+            <td>{{movie.name}}</td>
+            <td>{{movie.year}}</td>
+            <td>{{movie.allProjections}}</td>
+            
+        </tr>
+        </tbody>
+    </table>   
+    
+   <div><a href="#home">Home  </a></div>
