@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cinema.UI.LogInMainActivity"
+    tools:ignore="MergeRootFrame" >
+
+	<FrameLayout
+        android:id="@+id/frameLayoutForFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+    
+	<ImageView 
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:src="@drawable/cinema4"
+	    />
+	
+	<TextView
+        android:id="@+id/textViewName"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/name"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="enter username"
+        android:textColor="#000000"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewPasswordStartActivity"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="enter password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_shape"
+        android:text="@string/log_in" />
+
+    <Button
+        android:id="@+id/buttonCreateAccount"
+        android:layout_gravity="bottom|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="22sp"
+        android:background="@drawable/button_shape"
+        android:text="@string/create_account" />
+
+
+</LinearLayout>
+

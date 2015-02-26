@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cinema.UI.CreateAccountActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+		
+		    
+		    <TextView
+		        android:id="@+id/textViewName"
+		        android:layout_gravity="center"
+		        android:textSize="@dimen/text_size"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/name" />
+		
+		    <EditText
+		        android:id="@+id/editTextName"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:ems="10"
+		        android:gravity="center"
+		        android:hint="username"
+		        android:inputType="textNoSuggestions"
+		        android:textSize="@dimen/text_size" />
+		    
+		    <TextView
+		        android:id="@+id/textViewPasswordText"
+		        android:layout_marginLeft="8dp"
+		        android:layout_marginRight="8dp"
+		        android:layout_gravity="center"
+		        android:textSize="@dimen/text_size_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/password_text" />
+		    
+		    <TextView
+		        android:id="@+id/textViewPassword"
+		        android:layout_gravity="center"
+		        android:textSize="@dimen/text_size"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/password" />
+		
+		    <EditText
+		        android:id="@+id/editTextPassword"
+		        android:layout_gravity="center"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:gravity="center"
+		        android:hint="password"
+		        android:inputType="textPassword"
+		        android:textSize="@dimen/text_size" />
+		
+		    <TextView
+		        android:id="@+id/textViewRePassword"
+		        android:layout_gravity="center"
+		        android:textSize="@dimen/text_size"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/re_password" />
+		
+		    <EditText
+		        android:id="@+id/editTextRePassword"
+		        android:layout_gravity="center"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:hint="password again"
+		        android:ems="10"
+		        android:inputType="textPassword"
+		        android:textSize="@dimen/text_size" />
+		    
+		    
+		    <TextView
+		        android:id="@+id/textViewEmail"
+		        android:layout_gravity="center"
+		        android:textSize="@dimen/text_size"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/email" />
+		
+		    <EditText
+		        android:id="@+id/editTextEmail"
+		        android:layout_gravity="center"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:gravity="center"
+		        android:hint="email@email.com"
+		        android:inputType="textEmailAddress"
+		        android:textSize="@dimen/text_size" />
+		    
+            <Button 
+        	    android:id="@+id/buttonEnter"
+        	    android:layout_gravity="center"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:textSize="@dimen/text_size"
+        	    android:background="@drawable/button_shape"
+        	    android:text="@string/enter"/>
+		    
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

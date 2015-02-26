@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp" >
+
+    <ImageView
+        android:id="@+id/movie_thumbnail"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/movie_thumbnail"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/movie_thumbnail"
+        android:textSize="16sp" />
+	
+    <com.example.cinema.custom.view.ExpandableHeightGridView
+        android:id="@+id/movie_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_thumbnail"
+        android:columnWidth="70dp"
+        android:layout_centerHorizontal="true"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="5dp" >
+    </com.example.cinema.custom.view.ExpandableHeightGridView>
+
+</RelativeLayout>

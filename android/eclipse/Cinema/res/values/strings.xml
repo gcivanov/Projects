@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CinemProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Name*</string>
+    <string name="password">Password*</string>
+    <string name="password_text">(password must have 6 symbols-start with digits and end with character)</string>
+    <string name="re_password">RePassword*</string>
+    <string name="log_in">LogIn</string>
+    <string name="create_account">Create Account</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="enter">ENTER</string>
+    <string name="email">email*</string>
+    <string name="country">country</string>
+    <string name="title_activity_proj">ProjActivity</string>
+    <string name="reservation">reservation</string>
+    <string name="empty"></string>
+    
+    <string-array name="colors">
+		<item>red</item>
+		<item>orange</item>
+		<item>yellow</item>
+		<item>green</item>
+		<item>blue</item>
+		<item>indigo</item>
+		<item>violet</item>
+		<item> aqua </item>
+		<item> black</item>
+		<item>fuchsia</item>
+		<item>gray</item>
+		<item>grey</item>
+		<item>lime</item>
+		<item>maroon</item>
+		<item>navy</item>
+		<item>olive</item>
+		<item>purple</item>
+		<item>silver</item>
+		<item>teal</item>
+		<item>white</item>
+	</string-array>
+
+</resources>
