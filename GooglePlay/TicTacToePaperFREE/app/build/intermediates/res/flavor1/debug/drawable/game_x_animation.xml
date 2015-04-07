@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    android:oneshot="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@android:color/transparent" android:duration="200" />
+    <item android:drawable="@drawable/game_x_1" android:duration="4" />
+    <item android:drawable="@drawable/game_x_2" android:duration="4" />
+    <item android:drawable="@drawable/game_x_3" android:duration="4" />
+    <item android:drawable="@drawable/game_x_4" android:duration="4" />
+    <item android:drawable="@drawable/game_x_5" android:duration="4" />
+    <item android:drawable="@drawable/game_x_6" android:duration="4" />
+    <item android:drawable="@drawable/game_x_7" android:duration="4" />
+    <item android:drawable="@drawable/game_x" android:duration="4" />
+
+</animation-list>
+
+<!-- From: file:/C:/Users/gosho/AndroidStudioProjects/TicTacToePaperFREE/app/src/main/res/drawable/game_x_animation.xml -->
