@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="free.paper.toe.tac.tic.tictactoepaperfree.OptionsFragment">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="theme:"
+        android:id="@+id/themeTextView"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/themeTextView"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dark"
+            android:id="@+id/darkThemeRadioButton"
+            android:textSize="@dimen/text_size"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="light"
+            android:id="@+id/lightThemeRadioButton"
+            android:textSize="@dimen/text_size"
+            android:checked="false" />
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOUND"
+        android:id="@+id/soundCheckBox"
+        android:layout_above="@+id/themeTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:checked="false" />
+</RelativeLayout>

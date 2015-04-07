@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="free.paper.toe.tac.tic.tictactoepaperfree.OnePlayerFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_first"
+        android:id="@+id/textViewPlayFirstOnePlayer"
+        android:textSize="@dimen/text_size"
+        android:layout_marginRight="@dimen/margin_button"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/imageButtonXPlayFirstOnePlayer"
+        android:layout_toLeftOf="@+id/imageButtonXPlayFirstOnePlayer"
+        android:layout_toStartOf="@+id/imageButtonXPlayFirstOnePlayer" />
+
+    <ImageButton
+        android:layout_width="@dimen/image_button_menu_size"
+        android:layout_height="@dimen/image_button_menu_size"
+        android:id="@+id/imageButtonXPlayFirstOnePlayer"
+        android:background="@drawable/x_menu_size"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="@dimen/image_button_menu_size"
+        android:layout_height="@dimen/image_button_menu_size"
+        android:id="@+id/imageButtonOPlayFirstOnePlayer"
+        android:background="@drawable/o_menu_size"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_alignBottom="@+id/imageButtonXPlayFirstOnePlayer"
+        android:layout_toRightOf="@+id/imageButtonXPlayFirstOnePlayer"
+        android:layout_toEndOf="@+id/imageButtonXPlayFirstOnePlayer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_with"
+        android:textSize="@dimen/text_size"
+        android:textColor="#000000"
+        android:layout_marginRight="@dimen/margin_button"
+        android:id="@+id/textViewPlayWithOnePlayer"
+        android:layout_alignBottom="@+id/imageButtonXPlayWithOnePlayer"
+        android:layout_toLeftOf="@+id/imageButtonXPlayWithOnePlayer"
+        android:layout_toStartOf="@+id/imageButtonXPlayWithOnePlayer" />
+
+    <ImageButton
+        android:layout_width="@dimen/image_button_menu_size"
+        android:layout_height="@dimen/image_button_menu_size"
+        android:id="@+id/imageButtonOPlayWithOnePlayer"
+        android:background="@drawable/o_menu_size"
+        android:layout_above="@+id/imageButtonXPlayFirstOnePlayer"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:layout_alignRight="@+id/imageButtonOPlayFirstOnePlayer"
+        android:layout_alignEnd="@+id/imageButtonOPlayFirstOnePlayer" />
+
+    <ImageButton
+        android:layout_width="@dimen/image_button_menu_size"
+        android:layout_height="@dimen/image_button_menu_size"
+        android:id="@+id/imageButtonXPlayWithOnePlayer"
+        android:background="@drawable/x_menu_size"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:layout_alignTop="@+id/imageButtonOPlayWithOnePlayer"
+        android:layout_toLeftOf="@+id/imageButtonOPlayFirstOnePlayer"
+        android:layout_toStartOf="@+id/imageButtonOPlayFirstOnePlayer" />
+
+    <free.paper.toe.tac.tic.views.ButtonView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_game"
+        android:id="@+id/buttonStartOnePlayer"
+        android:textSize="@dimen/text_size"
+        android:background="@android:color/transparent"
+        android:textColor="@drawable/selector"
+        android:checked="false"
+        android:layout_marginTop="@dimen/margin_button"
+        android:layout_below="@+id/radioGroupOnePlayer"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPlayFirstOnePlayer"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_button"
+        android:id="@+id/radioGroupOnePlayer">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/easy"
+            android:textColor="#534B4F"
+            android:id="@+id/easyLevelRadioButton"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medium"
+            android:textColor="#534B4F"
+            android:id="@+id/mediumLevelRadioButton"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hard"
+            android:textColor="#534B4F"
+            android:id="@+id/hardLevelRadioButton"
+            android:layout_gravity="center_horizontal" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_name"
+        android:id="@+id/playerNameTextView"
+        android:textSize="@dimen/text_size"
+        android:textColor="#000000"
+        android:layout_marginRight="@dimen/margin_button"
+        android:layout_above="@+id/imageButtonXPlayWithOnePlayer"
+        android:layout_toLeftOf="@+id/imageButtonXPlayWithOnePlayer"
+        android:layout_toStartOf="@+id/imageButtonXPlayWithOnePlayer" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerNameEditText"
+        android:hint="@string/player1"
+        android:ems="6"
+        android:singleLine="true"
+        android:textSize="@dimen/text_seize_edit_text"
+        android:layout_alignBottom="@+id/playerNameTextView"
+        android:layout_alignLeft="@+id/imageButtonXPlayWithOnePlayer"
+        android:layout_alignStart="@+id/imageButtonXPlayWithOnePlayer" />
+
+</RelativeLayout>
